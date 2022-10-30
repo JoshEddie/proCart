@@ -85,9 +85,9 @@
         <div id="cartInfo">
             <h1>Shopping Cart</h1>
 
-            <div class="shopCompanyContainer">
+            <div id="AmazonContainer" class="shopCompanyContainer">
                 <img src="a_com_w_logo_rgb.png" />
-                <div class="shopItemContainer">
+                <!--div class="shopItemContainer">
                     <img src="https://m.media-amazon.com/images/I/91YNJM4oyhL._AC_SL1500_.jpg" />
                     <h1>Ticket To Ride</h1>
                     <h3>$30.99</h3>
@@ -96,7 +96,7 @@
                     <img src="https://m.media-amazon.com/images/I/81+okm4IpfL._AC_SL1500_.jpg" />
                     <h1>Catan</h1>
                     <h3>$30.99</h3>
-                </div>
+                </div-->
             </div>
 
 
@@ -105,12 +105,13 @@
                 <div class="shopItemContainer">
                     <img src="https://m.media-amazon.com/images/I/710k5IvsqIL._AC_SX679_.jpg" />
                     <h1>Parks</h1>
-                    <h3>$44.99</h3>
+                    <h3>Price: $<span class="price">44.99</span></h3>
+                    <h3>Quanity: <span class="quanity">1</span></h3>
                 </div>
             </div>
 
-            <h3>Shipping: $<span id="total">12.99</span></h3>
-            <h3>Total: $<span id="total">106.97</span></h3>
+            <h3>Shipping: $<span id="shipTotal">12.99</span></h3>
+            <h3>Total: $<span id="priceTotal">0</span></h3>
         </div>
 
         <button id="checkOut">Check Out</button>
