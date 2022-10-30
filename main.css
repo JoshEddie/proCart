@@ -344,3 +344,47 @@ body {
 .displayHide {
     display: none;
 }
+
+#goodbye {
+    position: fixed;
+    z-index: 400;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#goodbye img {
+    max-width: 480px;
+    width: 100%;
+}
+
+#goodbye h1{
+    color: #00B6F0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#goodbye h2{
+    color: #F58220;
+    text-align: center;
+    padding-bottom: 20; 
+    font-size: 18px;
+    font-weight: 20;
+}
+
+#pleaseCenter {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    background-color: #ffffff;
+    opacity: 1;
+    display: inline-block;
+    border-radius: 20px;
+    border: 2px solid var(--mainColorHex);
+    padding: 25px;
+    min-width: 650px;
+}

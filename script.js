@@ -290,3 +290,18 @@ function removeFromCart(id) {
     }
 
 }
+
+
+function checkoutButton() {
+    
+    var x = document.getElementById("goodbye");
+
+    if(x.style.display === "none")
+    {
+        x.style.display = "block";
+    }
+    else
+    {
+        x.style.display = "none";
+    }
+}
