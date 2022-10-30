@@ -21,9 +21,22 @@
 
 <body>
 
-    <div id="splashLoad" style="display: none;">
-        <img src="proCartLogo.png" id="logo" class="image"/>
+    <div id="splashLoad">
+        <img src="proCartLogo.png" id="logoSplash" class="image"/>
     </div>
+
+    <script>
+
+        setTimeout(splashLoad, 1500);
+
+        function splashLoad() {
+            //document.getElementById("splashLoad").style.transition = "all 5s ease";
+            //document.getElementById("splashLoad").className = "loaded"
+            document.getElementById("splashLoad").style.display = "none";
+        }
+
+
+    </script>
 
     <header id="headerMain">
 
@@ -85,7 +98,7 @@
         <div id="cartInfo">
             <h1>Shopping Cart</h1>
 
-            <div id="AmazonContainer" class="shopCompanyContainer">
+            <div id="amazonContainer" class="shopCompanyContainer">
                 <img src="a_com_w_logo_rgb.png" />
                 <!--div class="shopItemContainer">
                     <img src="https://m.media-amazon.com/images/I/91YNJM4oyhL._AC_SL1500_.jpg" />
@@ -100,14 +113,14 @@
             </div>
 
 
-            <div class="shopCompanyContainer">
+            <div id="targetContainer" class="shopCompanyContainer">
                 <img src="Target.png" />
-                <div class="shopItemContainer">
+                <!--div class="shopItemContainer">
                     <img src="https://m.media-amazon.com/images/I/710k5IvsqIL._AC_SX679_.jpg" />
                     <h1>Parks</h1>
                     <h3>Price: $<span class="price">44.99</span></h3>
                     <h3>Quanity: <span class="quanity">1</span></h3>
-                </div>
+                </div-->
             </div>
 
             <h3>Shipping: $<span id="shipTotal">12.99</span></h3>

@@ -89,9 +89,26 @@ function addToCart(id) {
 
         var logo = document.createElement('img');
         logo.className = "companyLogo";
-        
 
-        document.getElementById("AmazonContainer").appendChild(shopItemContainer);
+        var container;
+        
+        if(products[i][3] == "Amazon") {
+            container = document.getElementById("amazonContainer");
+        }
+        else if(products[i][3] == "Target") {
+            container = document.getElementById("targetContainer");
+        }
+        else if(products[i][3] == "BedBathBeyond") {
+            logo.src = "Target.png";
+        }
+        else if(products[i][3] == "Macys") {
+            logo.src = "Target.png";
+        }
+        else if(products[i][3] == "Walmart") {
+            logo.src = "Target.png";
+        }
+
+        container.appendChild(shopItemContainer);
         shopItemContainer.appendChild(img);
         shopItemContainer.appendChild(name);
         shopItemContainer.appendChild(price);

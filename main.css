@@ -46,10 +46,10 @@ body {
     right: 0;
     bottom: 0;
     background-color: var(--darkBG);
-    z-index: 10;
+    z-index: 10000;
 }
 
-#splashLoad #logo {
+#splashLoad #logoSplash {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -58,6 +58,12 @@ body {
     width: 100%;
     padding: 10px;
 }
+
+/*#splashLoad.loaded #logoSplash {
+    width: 50px;
+    vertical-align: middle;
+    cursor: pointer;
+}*/
 
 #headerMain {
     position: absolute;
