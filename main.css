@@ -93,7 +93,10 @@ body {
 .search-container {
     width: auto;
     display: inline-block;
-    width: 60%;
+    width: 55%;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
 }
 
 .search-container button {
@@ -140,10 +143,11 @@ body {
     left: 10px;
     right: 10px;
     bottom: 10px;
+    overflow-y: scroll;
 }
 
 .itemBox {
-    width: 96%;
+    width: calc(96% - 300px);
     margin: 2%;
     margin-top: 1%;
     margin-bottom: 0;
@@ -208,7 +212,7 @@ body {
     right: 0;
     width: 100%;
     max-width: 400px;
-    top: 40px;
+    top: 15px;
     bottom: 0;
     background-color: var(--darkBG);
     color: #ffffff;
@@ -220,19 +224,28 @@ body {
 
 .sidebar h1 {
     font-weight: 300;
-    text-align: left;
+    text-align: center;
     color: var(--mainAscentHex);
+    z-index: 400;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .sidebar h3 {
     font-weight: 400;
     text-align: right;
+    z-index: 400;
+    position: relative;
+    padding-right: 20px;
 }
 
 #cartInfo {
-    padding: 20px;
+    padding: 0 20px;
     position: relative;
     z-index: 100;
+    overflow: scroll;
+    height: 75%;
+    margin-bottom: 20px;
 }
 
 .shopCompanyContainer {
@@ -249,7 +262,7 @@ body {
 .shopCompanyContainer img {
     padding: 5px;
     max-width: 100px;
-    max-height: 100px;
+    max-height: 50px;
 }
 
 .shopItemContainer {
@@ -257,6 +270,7 @@ body {
     padding-top: 8px;
     padding-bottom: 15px;
     border-bottom: 1px solid var(--mainColorHex);
+    cursor: pointer;
 }
 
 .shopItemContainer:last-child {
@@ -271,18 +285,38 @@ body {
     left: 30px;
 }
 
-.shopItemContainer h1 {
+.shopItemContainer h2 {
     color: var(--darkBG);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     text-align: right;
 }
 
-.shopItemContainer h3 {
+.shopItemContainer h4 {
     color: var(--mainAscentHex);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     text-align: right;
+}
+
+.removeCart {
+    display: none;
+}
+
+.shopItemContainer:hover .removeCart {
+    float: right;
+    width: 40px;
+    background-color: red;
+    color: #fff;
+    position: relative;
+    top: -64px;
+    padding: 40px 0;
+    margin-right: -45px;
+    display: block;
+}
+
+.shopItemContainer:hover {
+    padding-right: 45px;
 }
 
 #checkOut {
@@ -296,6 +330,7 @@ body {
     border-radius: 20px;
     width: 75%;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .displayHide {

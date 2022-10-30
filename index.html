@@ -6,6 +6,8 @@
 
 <head>
 
+    <title>proCART</title>
+
     <meta http-equiv="Content-Language" content="en">
 
     <link type="text/css" rel="stylesheet" media="all" href="main.css?v=1.1">
@@ -22,36 +24,22 @@
 <body>
 
     <div id="splashLoad">
-        <img src="proCartLogo.png" id="logoSplash" class="image"/>
+        <img src="images/ProCartLogo.png" id="logoSplash" class="image"/>
     </div>
-
-    <script>
-
-        setTimeout(splashLoad, 1500);
-
-        function splashLoad() {
-            //document.getElementById("splashLoad").style.transition = "all 5s ease";
-            //document.getElementById("splashLoad").className = "loaded"
-            document.getElementById("splashLoad").style.display = "none";
-        }
-
-
-    </script>
 
     <header id="headerMain">
 
-        <img src="proCartLogo.png" id="logo" class="image"/>
+
+        <a href="index.html"><img src="images/ProCartLogo.png" id="logo" class="image"/></a>
         <!--<input type="text" placeholder="Search..">-->
 
 
         <div class="search-container">
-            <form action="">
-            <input type="text" placeholder="Search.." name="search">
+            <form id="searchBar" onsubmit="formHandle(document.getElementById('searchInput').value)"> 
+            <input type="text" placeholder="Search.." name="search" id="searchInput">
             <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-
-        <a href="">login</a>
 
     </header>
 
@@ -59,7 +47,7 @@
     <main id="itemBoxes">
 
         <section id="trending" class="itemBox">
-            <h1>Trending <a class="viewMore" onclick="">View More</a></h1>
+            <h1>Featured <!--a class="viewMore" onclick="">View More</a--></h1>
             <!--div class="itemContainer">
                 <img src="https://m.media-amazon.com/images/I/91YNJM4oyhL._AC_SL1500_.jpg" />
                 <h1>Ticket To Ride</h1>
@@ -83,63 +71,77 @@
 
             
         </section>
-        <section id="orders" class="itemBox">
+        <section id="searchResults" class="itemBox displayHide">
+
+            <h1>Search Results: <span id="searchTerm"></span></h1>
+
+
+        </section>
+        <!--section id="orders" class="itemBox">
             <h1>Orders <a class="viewMore" onclick="">View More</a></h1>
         </section>
         <section id="related" class="itemBox">
             <h1>Related <a class="viewMore" onclick="">View More</a></h1>
-        </section>
+        </section-->
 
 
     </main>
 
     <aside id="cartContainer" class="sidebar">
 
+        <h1 id="cartTitle">Your Cart is Empty</h1>
+
         <div id="cartInfo">
-            <h1>Shopping Cart</h1>
 
-            <div id="amazonContainer" class="shopCompanyContainer">
-                <img src="a_com_w_logo_rgb.png" />
-                <!--div class="shopItemContainer">
-                    <img src="https://m.media-amazon.com/images/I/91YNJM4oyhL._AC_SL1500_.jpg" />
-                    <h1>Ticket To Ride</h1>
-                    <h3>$30.99</h3>
-                </div>
-                <div class="shopItemContainer">
-                    <img src="https://m.media-amazon.com/images/I/81+okm4IpfL._AC_SL1500_.jpg" />
-                    <h1>Catan</h1>
-                    <h3>$30.99</h3>
-                </div-->
+            <div id="amazonContainer" class="shopCompanyContainer displayHide">
+                <img src="images/a_com_w_logo_rgb.png" />
             </div>
 
-
-            <div id="targetContainer" class="shopCompanyContainer">
-                <img src="Target.png" />
-                <!--div class="shopItemContainer">
-                    <img src="https://m.media-amazon.com/images/I/710k5IvsqIL._AC_SX679_.jpg" />
-                    <h1>Parks</h1>
-                    <h3>Price: $<span class="price">44.99</span></h3>
-                    <h3>Quanity: <span class="quanity">1</span></h3>
-                </div-->
+            <div id="targetContainer" class="shopCompanyContainer displayHide">
+                <img src="images/Target.png" />
             </div>
 
-            <h3>Shipping: $<span id="shipTotal">12.99</span></h3>
-            <h3>Total: $<span id="priceTotal">0</span></h3>
+            <div id="bedBathBeyondContainer" class="shopCompanyContainer displayHide">
+                <img src="images/BedBathBeyond.png" />
+            </div>
+
+            <div id="homeDepotContainer" class="shopCompanyContainer displayHide">
+                <img src="images/The_Home_Depot.png" />
+            </div>
+
         </div>
+
+        <h3>Shipping: $<span id="shipTotal">0</span></h3>
+        <h3>Total: $<span id="priceTotal">0</span></h3>
 
         <button id="checkOut">Check Out</button>
 
     </aside>
 
-    <aside id="login" class="sidebar">
-
-
-
-    </aside>
-
     <script>
 
+    var form = document.getElementById("searchBar");
+    form.reset();
+
     addProducts();
+
+    setTimeout(splashLoad, 1500);
+
+    function splashLoad() {
+        //document.getElementById("splashLoad").style.transition = "all 5s ease";
+        //document.getElementById("splashLoad").className = "loaded"
+        document.getElementById("splashLoad").style.display = "none";
+    }
+    
+    var form = document.getElementById("searchBar");
+    function handleForm(event) { event.preventDefault(); } 
+    form.addEventListener('submit', handleForm);
+
+    function formHandle(text) {
+        search(text);
+        var form = document.getElementById("searchBar");
+        form.reset();
+    }
 
     </script>
 
