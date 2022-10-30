@@ -115,9 +115,6 @@ body {
   }
 
 .search-container input {
-    /*text-align: left;
-    position: relative;
-    left: 200px;*/
     display: inline-block;
     width: calc(100% - 30px);
     top: 8px;
@@ -385,4 +382,46 @@ body {
     border: 2px solid var(--mainColorHex);
     padding: 25px;
     min-width: 650px;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .search-container {
+        width: auto;
+        display: inline-block;
+        width: 40%;
+        position: absolute;
+        left: 40%;
+        transform: translateX(-50%);
+        overflow-x: visible;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .search-container {
+        width: auto;
+        display: inline-block;
+        width: 30%;
+        position: absolute;
+        left: 35%;
+        transform: translateX(-50%);
+        overflow-x: visible;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    .search-container {
+        width: auto;
+        display: inline-block;
+        width: 20%;
+        position: absolute;
+        left: 30%;
+        transform: translateX(-50%);
+        overflow-x: visible;
+    }
+
 }
