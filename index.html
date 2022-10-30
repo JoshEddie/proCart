@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+
+    <meta http-equiv="Content-Language" content="en">
+
+    <link type="text/css" rel="stylesheet" media="all" href="main.css?v=1.1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/61196bbe6f.js" crossorigin="anonymous"></script>
+
+<head>
+
+
+
+</head>
+
+<body>
+
+    <div id="splashLoad" style="display: none;">
+        <img src="proCartLogo.png" id="logo" class="image"/>
+    </div>
+
+    <header id="headerMain">
+
+        <img src="proCartLogo.png" id="logo" class="image"/>
+        <!--<input type="text" placeholder="Search..">-->
+
+
+        <div class="search-container">
+            <form action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+    </header>
+
+
+    <main id="itemBoxes">
+
+        <section id="trending" class="itemBox">
+            <h1>Trending <a class="viewMore" onclick="">View More</a></h1>
+            <div class="itemContainer">
+                <img src="https://m.media-amazon.com/images/I/91YNJM4oyhL._AC_SL1500_.jpg" />
+                <h1>Ticket To Ride</h1>
+                <h3>$30.99</h3>
+                <img class="companyLogo" src="a_com_w_logo_rgb.png"/>
+            </div>
+
+            <div class="itemContainer">
+                <img src="https://m.media-amazon.com/images/I/81+okm4IpfL._AC_SL1500_.jpg" />
+                <h1>Catan</h1>
+                <h3>$30.99</h3>
+                <img class="companyLogo" src="a_com_w_logo_rgb.png"/>
+            </div>
+
+            <div class="itemContainer">
+                <img src="https://m.media-amazon.com/images/I/710k5IvsqIL._AC_SX679_.jpg" />
+                <h1>Parks</h1>
+                <h3>$44.99</h3>
+                <img class="companyLogo" src="Target.png"/>
+            </div>
+
+            
+        </section>
+        <section id="orders" class="itemBox">
+            <h1>Orders <a class="viewMore" onclick="">View More</a></h1>
+        </section>
+        <section id="related" class="itemBox">
+            <h1>Related <a class="viewMore" onclick="">View More</a></h1>
+        </section>
+
+
+    </main>
+
+    <aside id="cartContainer" class="sidebar">
+
+        <div id="cartInfo">
+            <h1>Shopping Cart</h1>
+
+            <div class="shopCompanyContainer">
+                <img src="a_com_w_logo_rgb.png" />
+                <div class="shopItemContainer">
+                    <img src="https://m.media-amazon.com/images/I/91YNJM4oyhL._AC_SL1500_.jpg" />
+                    <h1>Ticket To Ride</h1>
+                    <h3>$30.99</h3>
+                </div>
+                <div class="shopItemContainer">
+                    <img src="https://m.media-amazon.com/images/I/81+okm4IpfL._AC_SL1500_.jpg" />
+                    <h1>Catan</h1>
+                    <h3>$30.99</h3>
+                </div>
+            </div>
+
+
+            <div class="shopCompanyContainer">
+                <img src="Target.png" />
+                <div class="shopItemContainer">
+                    <img src="https://m.media-amazon.com/images/I/710k5IvsqIL._AC_SX679_.jpg" />
+                    <h1>Parks</h1>
+                    <h3>$44.99</h3>
+                </div>
+            </div>
+
+            <h3>Shipping: $<span id="total">12.99</span></h3>
+            <h3>Total: $<span id="total">106.97</span></h3>
+        </div>
+
+        <button id="checkOut">Check Out</button>
+
+    </aside>
+
+    <aside id="login" class="sidebar">
+
+
+
+    </aside>
+
+</body>
+
+</html>
