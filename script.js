@@ -93,7 +93,7 @@ function addProducts() {
 
 function search(data) {
 
-    document.getElementById("searchResults").innerHTML = '<h1>Search Results: <span id="searchTerm"></span></h1>';
+    document.getElementById("searchResults").innerHTML = '<h1>Search Results: <span id="searchTerm"></span></h1><a class="viewMore" onclick="closeSearch()">Close Results</a>';
 
     document.getElementById("searchResults").classList.remove("displayHide");
     document.getElementById("searchTerm").innerHTML = data;
@@ -106,6 +106,13 @@ function search(data) {
         }
 
     }
+
+}
+
+function closeSearch() {
+
+    document.getElementById("searchResults").classList.add("displayHide");
+    document.getElementById("trending").classList.remove("displayHide");
 
 }
 
