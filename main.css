@@ -33,7 +33,7 @@
     border: none; 
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 body {
@@ -251,6 +251,7 @@ body {
     overflow: scroll;
     height: 75%;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .shopCompanyContainer {
@@ -262,6 +263,7 @@ body {
     border: 2px solid var(--mainColorHex);
     border-radius: 10px;
     background-color: #ffffff;
+    overflow-y: hidden;
 }
 
 .shopCompanyContainer img {
@@ -276,6 +278,7 @@ body {
     padding-bottom: 15px;
     border-bottom: 1px solid var(--mainColorHex);
     cursor: pointer;
+    overflow-y: hidden;
 }
 
 .shopItemContainer:last-child {

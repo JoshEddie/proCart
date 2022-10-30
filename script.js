@@ -10,8 +10,8 @@ var products = [
     ["Tealights Bag of 100", "9.99", "https://b3h2.scene7.com/is/image/BedBathandBeyond/34222740391885p?$imagePLP$&wid=363&hei=363", "Bed Bath & Beyond", "featured, Decor, Lighting, Bulk"],
     ["Green Scented Candle", "15.99", "https://b3h2.scene7.com/is/image/BedBathandBeyond/2022-05-07-03-50__dsc8997_imageset?%24380%24=&wid=2000&hei=2000", "Bed Bath & Beyond", "featured, Scented, Candle, Decor"],
     ["Grey Scented Candle", "15.99", "https://b3h2.scene7.com/is/image/BedBathandBeyond/2022-05-07-03-50__dsc8991_imageset?$imagePLP$&wid=363&hei=363", "Bed Bath & Beyond", "featured, Scented, Candle, Decor"],
-    ["LG Refrigerator Filter", "52.48", "https://images.thdstatic.com/productImages/7c6c8cc7-9f08-4a2f-8030-eb19a9479a09/svn/lg-electronics-refrigerator-water-filters-lt1000pc-64_300.jpg", "Home Depot", "featured, Home Improvement, Refrigerator, Filter"],
-    ["GE Refrigerator Filter", "52.48", "https://images.thdstatic.com/productImages/bd5d5705-0014-459a-96c7-eb8f955750ea/svn/ge-refrigerator-water-filters-rpwfe-64_300.jpg", "Home Depot", "featured, Home Improvement, Refrigerator, Filter"],
+    ["LG Refrigerator Filter", "52.48", "https://images.thdstatic.com/productImages/7c6c8cc7-9f08-4a2f-8030-eb19a9479a09/svn/lg-electronics-refrigerator-water-filters-lt1000pc-64_300.jpg", "Home Depot", "Home Improvement, Refrigerator, Filter"],
+    ["GE Refrigerator Filter", "52.48", "https://images.thdstatic.com/productImages/bd5d5705-0014-459a-96c7-eb8f955750ea/svn/ge-refrigerator-water-filters-rpwfe-64_300.jpg", "Home Depot", "Home Improvement, Refrigerator, Filter"],
     ["Serta Comforter Set", "99.99", "https://target.scene7.com/is/image/Target/GUEST_457bcbb3-ef99-405a-98e7-8505390bbdf6?wid=2220&hei=2220&fmt=pjpeg", "Target", "bedding, comforter, blanket, sheets"],
     ["Linen Blend Duvet Set", "79.99", "https://target.scene7.com/is/image/Target/GUEST_949a0948-7885-49c2-91b8-01230b3de372?wid=1000&hei=1000&qlt=80&fmt=webp", "Target", "bedding, comforter, blanket, sheets"],
     ["Knit Throw Blanket", "95.00", "https://target.scene7.com/is/image/Target/GUEST_21518c8d-8329-49f9-a859-82a7ce60c77a?wid=1000&hei=1000&qlt=80&fmt=webp", "Target", "featured, bedding, blanket"],
@@ -23,8 +23,8 @@ var products = [
     ["Protein Powder", "27.99", "https://b3h2.scene7.com/is/image/BedBathandBeyond/2021-11-12-10-39_darkchocolatepowder_front1_imageset?%24380%24=&wid=2000&hei=2000", "Bed Bath & Beyond", "health, weight, workout, muscle"],
     ["Mascara", "8.99", "https://target.scene7.com/is/image/Target/GUEST_8d1f53fb-ae0b-4513-a1db-19f07ba32a6e?wid=1000&hei=1000&qlt=80&fmt=webp", "Target", "make-up, womens, woman, make up, makeup"], 
     ["Foundation", "33.00", "https://target.scene7.com/is/image/Target/GUEST_ebd7111f-9de7-438e-a38d-c93f0b98de51?wid=1000&hei=1000&qlt=80&fmt=webp", "Target", "make-up, makeup, womens, woman, make up"],
-    ["ASUS TUF Gaming", "609.00", "https://m.media-amazon.com/images/I/81OiT2-NoeL._AC_SX679_.jpg", "Amazon", "Electronics, laptop, computer, macbook, notebook"],
-    ["Nintendo Switch", "349.00", "https://m.media-amazon.com/images/I/61dYrzvBLbL._SX522_.jpg", "Amazon", "Electronics, game, kids, toy, video games"]
+    ["ASUS TUF Gaming", "609.00", "https://m.media-amazon.com/images/I/81OiT2-NoeL._AC_SX679_.jpg", "Amazon", "featured, Electronics, laptop, computer, macbook, notebook"],
+    ["Nintendo Switch", "349.00", "https://m.media-amazon.com/images/I/61dYrzvBLbL._SX522_.jpg", "Amazon", "featured, Electronics, game, kids, toy, video games"]
 ]
 
 var cart = [0, 0, 0, 0];
