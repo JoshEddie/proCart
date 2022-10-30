@@ -1,8 +1,15 @@
 var products = [
     //[Name, price, image url, company, keywords]
     ["Ticket To Ride", "30.99", "https://m.media-amazon.com/images/I/91YNJM4oyhL._AC_SL1500_.jpg", "Amazon", "Board Game, Game, Toy, Trains"],
-    ["Catan", "30.99", "https://m.media-amazon.com/images/I/81+okm4IpfL._AC_SL1500_.jpg", "Amazon", "Board Game, Game, Toy"],
-    ["Parks", "44.99", "https://m.media-amazon.com/images/I/710k5IvsqIL._AC_SX679_.jpg", "Target"]
+    ["Catan", "30.99", "https://m.media-amazon.com/images/I/81+okm4IpfL._AC_SL1500_.jpg", "Amazon", "Board Game, Game, Toy, Strategy"],
+    ["Parks", "44.99", "https://m.media-amazon.com/images/I/710k5IvsqIL._AC_SX679_.jpg", "Target", "Board Game, Game, Toy, Outdoors"]
+    ["Tealights Bag of 100", "9.99", "https://b3h2.scene7.com/is/image/BedBathandBeyond/34222740391885p?$imagePLP$&wid=363&hei=363", "Bed Bath & Beyond", "Decor, Lighting, Bulk"]
+    ["Green Scented Candle", "15.99", "https://www.bedbathandbeyond.com/store/product/bee-willow-refreshing-herb-large-3-wick-jar-candle-with-lid-in-green/5687949?", "Bed Bath & Beyond", "Scented, Candle, Decor"]
+    ["Grey Scented Candle", "15.99", "https://b3h2.scene7.com/is/image/BedBathandBeyond/2022-05-07-03-50__dsc8991_imageset?$imagePLP$&wid=363&hei=363", "Bed Bath & Beyond", "Scented, Candle, Decor"]
+    ["LG Refrigerator Filter", "52.48", "https://images.thdstatic.com/productImages/7c6c8cc7-9f08-4a2f-8030-eb19a9479a09/svn/lg-electronics-refrigerator-water-filters-lt1000pc-64_300.jpg", "Home Depot", "Home Improvement, Refrigerator, Filter"]
+    ["GE Refrigerator Filter", "52.48", "https://images.thdstatic.com/productImages/bd5d5705-0014-459a-96c7-eb8f955750ea/svn/ge-refrigerator-water-filters-rpwfe-64_300.jpg", "Home Depot", "Home Improvement, Refrigerator, Filter"]
+
+
 ]
 
 function addProducts() {
@@ -34,10 +41,10 @@ function addProducts() {
         else if(products[i][3] == "Target") {
             logo.src = "Target.png";
         }
-        else if(products[i][3] == "BedBathBeyond") {
+        else if(products[i][3] == "Bed Bath & Beyond") {
             logo.src = "Target.png";
         }
-        else if(products[i][3] == "Macys") {
+        else if(products[i][3] == "Home Depot") {
             logo.src = "Target.png";
         }
         else if(products[i][3] == "Walmart") {
@@ -55,7 +62,6 @@ function addProducts() {
     }
 
 }
-
 
 function addToCart(id) {
 
